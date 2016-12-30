@@ -1,16 +1,30 @@
 {
-	"name": "NodejsStarterApp",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node app.js"
-	},
-	"dependencies": {
-		"express": "4.13.x",
-		"cfenv": "1.0.x"
-	},
-	"repository": {},
-	"engines": {
-		"node": "4.x"
-	} 
+  "name": "carte-itp-bnpp",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cfenv": "^1.0.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "multer": "^1.0.3",
+    "request": "^2.61.0",
+    "twilio": "^2.3.0",
+    "unirest": "^0.4.2",
+    "cloudant": "~1.6.2"
+  },
+  "repository": {},
+  "engines": {
+    "node": "4.x"  
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.2",
+    "supertest": "^1.1.0"
+  }
 }

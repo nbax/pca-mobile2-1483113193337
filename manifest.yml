@@ -1,9 +1,12 @@
 applications:
-- path: .
-  memory: 256M
-  instances: 1
+- disk_quota: 1024M
+  host: pca-mobile
+  name: PCA-mobile
+  path: .
   domain: mybluemix.net
-  name: pca-mobile2
-  host: pca-mobile2
-  disk_quota: 1024M
+  instances: 1
+  memory: 256M
   buildpack: nodejs_buildpack
+  
+  services:
+  - Cloudant NoSQL DB-uq
